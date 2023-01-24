@@ -24,7 +24,7 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    @Bean
+//    @Bean
     CommandLineRunner runner(LinkRepository linkRepository, CommentRepository commentRepository) {
         return args -> {
             Link link = new Link("Getting Started with SpringBoot 2", "http://therealdanvega.com/spring-boot-2");
